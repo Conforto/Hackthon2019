@@ -64,6 +64,9 @@ frase<-str_replace_all(frase, "[[:punct:]]", "")
 listafrase<-strsplit(frase, " ")
                    
 vetorfrase <- unlist(listafrase)
+
+#Removendo as palavras repetidas
+vetorfrase<-unique(vetorfrase)
                    
 #contando quantas letras há no vetor
                    
